@@ -310,7 +310,6 @@
 
   /* --- Header --- */
   .header {
-    margin-bottom: var(--space-xxl);
     padding: 0 var(--space-sm) 0 0;
   }
 
