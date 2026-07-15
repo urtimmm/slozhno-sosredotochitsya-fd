@@ -192,8 +192,8 @@
 
 .content {
   display: grid;
-  padding: var(--space-lg) 0;
   gap: var(--space-xl);
+  padding: var(--space-lg) 0;
 }
 
 /* --- SECTION (Секции со статьями) --- */
@@ -310,8 +310,8 @@
 
   /* --- Header --- */
   .header {
-    padding: 0 var(--space-sm) 0 0;
     margin-bottom: var(--space-xxl);
+    padding: 0 var(--space-sm) 0 0;
   }
 
   .header__title {
@@ -337,8 +337,8 @@
   }
 
   .content {
-    padding: var(--space-xxl) 0;
     gap: var(--space-xxxl);
+    padding: var(--space-xxl) 0;
   }
 
   /* --- Section (Базовая сетка 1fr 2fr) --- */
