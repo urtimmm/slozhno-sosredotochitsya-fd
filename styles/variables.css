@@ -2,3 +2,44 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+
+  /* ========================
+     ТИПОГРАФИКА
+     ======================== */
+  --font-main: 'IBM Plex mono', Consolas, Monaco, 'Courier New', Courier, monospace;
+  
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-base: 18px;
+  
+  --bg-image: url('../images/cover-image-dark.png'); /* Фоновое изображение */
+
+  --bg-color: #000028;          /* Фон всей страницы */
+    
+  --paragraph-color: #F1B2CE;  /* Второстепенный текст */
+
+  --accent-color: #ff0070;      /* Акцентный цвет */
+  --theme-menu-color: var(--accent-color);
+  --title-color: #DB00FF;       /* Цвет крупных заголовков */
+  --section-title-color: var(--accent-color); /* Цвет заголовков секций */
+  --decor-bg: var(--accent-color); /* Цвет плашки с текстом */
+  --decor-text: #000028;
+
+  --decor-zone-color: var(--accent-color);  /* Цвет плашки с текстом */
+  
+  --rec-display: flex;
+
+
+  --space-xs: 10px;
+  --space-sm: 15px;
+  --space-md: 20px;
+  --space-lg: 30px;
+  --space-xl: 40px;
+  --space-xxl: 50px;
+  --space-xxxl: 80px;
+}
+
+  

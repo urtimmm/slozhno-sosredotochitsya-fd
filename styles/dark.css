@@ -9,4 +9,28 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+
+  /* Фоновое изображение для тёмной темы */
+  --bg-image: url('../images/cover-image-dark.png');
+
+ /* Фон и основной текст */
+  --bg-color: #000028;
+  
+  /* Универсальный акцентный цвет (кнопки, уголки, REC, заголовки статей) */
+  --accent-color: #FF0070;
+  --paragraph-color: #F1B2CE; 
+  /* Главный заголовок (no focus) */
+  --title-color: #DB00FF;
+  
+--theme-menu-color: var(--accent-color);
+
+  --section-title-color: var(--accent-color);
+
+  /* Плашки (title-decor) */
+  --decor-text: #000028;
+  --decor-bg: var(--accent-color);
+
+  --decor-zone-color: var(--accent-color);  
+  --rec-display: flex;
 }
+
