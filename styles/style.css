@@ -32,7 +32,7 @@
   height: 25px;
   border-style: solid;
   border-color: var(--decor-zone-color);
-  pointer-events: none; 
+  pointer-events: none;
 }
 
 /* Верхний правый уголок */
@@ -60,8 +60,8 @@
 .text-link { 
   /* Резервируем прозрачную рамку со всех сторон */
   border: 1px solid transparent;
-  color: inherit; 
-  text-decoration: none; 
+  color: inherit;
+  text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
@@ -89,7 +89,7 @@
   /* Задаем высоту равную высоте окна браузера */
   height: 100vh;
   /* Фиксируем минимальную высоту по размеру макета */
-  min-height: 668px; 
+  min-height: 668px;
   margin-bottom: var(--space-xxl);
   padding: var(--space-xs);
   font-family: var(--font-main);
@@ -108,7 +108,7 @@
 }
 
 .header__rec::after {
-  content: ""; 
+  content: "";
   display: block;
   width: var(--space-xs);
   height: var(--space-xs);
@@ -122,7 +122,7 @@
   justify-self: end;
   /* Прижимаем к верхнему краю ячейки по вертикали */
   align-self: start;
-  margin-top: 18%; 
+  margin-top: 18%;
 }
 
 .header__theme-menu-list {
@@ -207,10 +207,10 @@
 
 .section__subtitle {
   margin: 0 0 20px 0; /* Отступ снизу до карточек */
-  color: var(--decor-text); 
+  color: var(--decor-text);
   font-family: var(--font-main);
   font-weight: var(--fw-bold);
-  font-size: var(--fs-base); 
+  font-size: var(--fs-base);
 }
 
 
@@ -228,7 +228,7 @@
 }
 
 .card__title_type_advice {
-  font-weight: var(--fw-regular); 
+  font-weight: var(--fw-regular);
 }
 
 .card__text {
@@ -308,7 +308,7 @@
 
   .header__title {
     width: auto;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); 
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
   
   .header__description {
@@ -331,7 +331,7 @@
   /* --- Section (Базовая сетка 1fr 2fr) --- */
   .section {
     display: grid;
-    grid-template-columns: 1fr 2fr; 
+    grid-template-columns: 1fr 2fr;
     gap: var(--space-md);
     padding: 0 var(--space-md) var(--space-xxxl);
   }
@@ -339,11 +339,11 @@
   /* --- Section (Исключение: заголовок над карточками) --- */
   .section_title_top .cards-list {
     /* Растягиваем карточки на всю ширину (на обе колонки) */
-    grid-column: 1 / -1; 
+    grid-column: 1 / -1;
   }
   
   .section_title_top .section__title {
-    margin-bottom: 0; 
+    margin-bottom: 0;
   }
 
   /* --- Gallery (Мозаичная сетка) --- */
@@ -356,7 +356,7 @@
     /* Создаем сетку из 3 одинаковых колонок */
     grid-template-columns: repeat(3, 1fr);
     /* Отступ между картинками */
-    gap: var(--space-md); 
+    gap: var(--space-md);
   }
 
   .gallery__title {
@@ -366,7 +366,7 @@
   .gallery__image {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
   }
 
   /* 1. Закат */
@@ -411,13 +411,13 @@
   }
 
   .header__theme-menu {
-    justify-self: center; 
+    justify-self: center;
     margin-top: 0;
-    padding-left: var(--space-md); 
+    padding-left: var(--space-md);
   }
   
   .header__theme-menu-list {
-    flex-direction: row; 
+    flex-direction: row;
     gap: var(--space-xs);
   }
 
@@ -428,8 +428,8 @@
   /* --- Section (Карточки во второй секции выстраиваются в ряд) --- */
   .section_title_top .cards-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: var(--space-md); 
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
   }
   
   .section_title_top .card {
