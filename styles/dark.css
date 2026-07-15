@@ -10,27 +10,25 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
-  /* Фоновое изображение для тёмной темы */
-  --bg-image: url('../images/cover-image-dark.png');
+  /* ========================
+     ЦВЕТОВАЯ ПАЛИТРА И ФОН
+     ======================== */
+  --bg-color: #000028; /* Фон всей страницы */
+  --bg-image: url("../images/cover-image-dark.png"); /* Фоновое изображение для тёмной темы */
 
- /* Фон и основной текст */
-  --bg-color: #000028;
-  
-  /* Универсальный акцентный цвет (кнопки, уголки, REC, заголовки статей) */
-  --accent-color: #FF0070;
-  --paragraph-color: #F1B2CE; 
-  /* Главный заголовок (no focus) */
-  --title-color: #DB00FF;
-  
---theme-menu-color: var(--accent-color);
+  --paragraph-color: #f1b2ce; /* Второстепенный текст */
+  --title-color: #db00ff; /* Главный заголовок (no focus) */
+  --accent-color: #ff0070; /* Универсальный акцентный цвет (кнопки, уголки, REC) */
 
-  --section-title-color: var(--accent-color);
+  /* ========================
+     ЭЛЕМЕНТЫ ИНТЕРФЕЙСА
+     ======================== */
+  --theme-menu-color: var(--accent-color); /* Цвет текста в меню тем */
+  --section-title-color: var(--accent-color); /* Цвет заголовков секций */
 
-  /* Плашки (title-decor) */
-  --decor-text: #000028;
-  --decor-bg: var(--accent-color);
+  --decor-bg: var(--accent-color); /* Цвет фона плашек (title-decor) */
+  --decor-text: #000028; /* Цвет текста на плашках */
+  --decor-zone-color: var(--accent-color); /* Цвет декоративных уголков */
 
-  --decor-zone-color: var(--accent-color);  
-  --rec-display: flex;
+  --rec-display: flex; /* Управление видимостью значка REC */
 }
-

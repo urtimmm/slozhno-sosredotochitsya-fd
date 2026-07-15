@@ -9,48 +9,59 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
- 
-  /* Фоновое изображение для тёмной темы */
-  --bg-image: url('../images/cover-image-light.png');
 
- /* Фон и основной текст */
-  --bg-color: #ffebf7;
-  --paragraph-color: #353430;
-  
-  /* Универсальный акцентный цвет (кнопки, уголки, REC, заголовки статей) */
-  --accent-color: #FF8DCB;
-  
---theme-menu-color: var(--paragraph-color);
+  /* ========================
+     ЦВЕТОВАЯ ПАЛИТРА И ФОН
+     ======================== */
+  --bg-color: #ffebf7; /* Фон всей страницы */
+  --bg-image: url("../images/cover-image-light.png"); /* Фоновое изображение для светлой темы */
 
-  --section-title-color: var(--paragraph-color);
-  /* Главный заголовок (no focus) */
-  --title-color: #FFC2E6;
+  --paragraph-color: #353430; /* Второстепенный текст */
+  --title-color: #ffc2e6; /* Главный заголовок (no focus) */
+  --accent-color: #ff8dcb; /* Универсальный акцентный цвет (кнопки, уголки, REC) */
 
-  --decor-bg: var(--accent-color);
-  
-  /* Плашки (title-decor) */
-  --decor-text: #353430;
+  /* ========================
+     ЭЛЕМЕНТЫ ИНТЕРФЕЙСА
+     ======================== */
+  --theme-menu-color: var(--paragraph-color); /* Цвет текста в меню тем */
+  --section-title-color: var(--paragraph-color); /* Цвет заголовков секций */
 
-  --decor-zone-color: var(--paragraph-color); 
-  --rec-display: none;  
+  --decor-bg: var(--accent-color); /* Цвет фона плашек (title-decor) */
+  --decor-text: #353430; /* Цвет текста на плашках */
+  --decor-zone-color: var(--paragraph-color); /* Цвет декоративных уголков */
+
+  --rec-display: none; /* Скрываем значок REC в светлой теме */
 }
 
-
+/* Автоматическое переключение на светлую тему,
+  если у пользователя так настроена система
+*/
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-image: url('../images/cover-image-light.png');
+    /* ========================
+       ЦВЕТОВАЯ ПАЛИТРА И ФОН
+       ======================== */
     --bg-color: #ffebf7;
+    --bg-image: url("../images/cover-image-light.png");
+
     --paragraph-color: #353430;
-    --accent-color: #FF8DCB;
+    --title-color: #ffc2e6;
+    --accent-color: #ff8dcb;
+
+    /* ========================
+       ЭЛЕМЕНТЫ ИНТЕРФЕЙСА
+       ======================== */
     --theme-menu-color: var(--paragraph-color);
     --section-title-color: var(--paragraph-color);
-    --title-color: #FFC2E6;
+
     --decor-bg: var(--accent-color);
     --decor-text: #353430;
-    --decor-zone-color: var(--paragraph-color); 
-    --rec-display: none; 
+    --decor-zone-color: var(--paragraph-color);
+
+    --rec-display: none;
   }
 
+  /* Принудительно скрываем REC при авто-теме, если системная тема светлая */
   :root.theme-auto .header__rec {
     display: none;
   }

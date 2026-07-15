@@ -4,35 +4,41 @@
 */
 
 :root {
-
   /* ========================
      ТИПОГРАФИКА
      ======================== */
-  --font-main: 'IBM Plex mono', Consolas, Monaco, 'Courier New', Courier, monospace;
-  
+  --font-main:
+    "IBM Plex mono", Consolas, Monaco, "Courier New", Courier, monospace;
+
   --fw-regular: 400;
   --fw-bold: 700;
-
   --fs-base: 18px;
-  
-  --bg-image: url('../images/cover-image-dark.png'); /* Фоновое изображение */
 
-  --bg-color: #000028;          /* Фон всей страницы */
-    
-  --paragraph-color: #F1B2CE;  /* Второстепенный текст */
+  /* ========================
+     ЦВЕТОВАЯ ПАЛИТРА И ФОН
+     ======================== */
+  --bg-color: #000028; /* Фон всей страницы */
+  --bg-image: url("../images/cover-image-dark.png"); /* Фоновое изображение */
 
-  --accent-color: #ff0070;      /* Акцентный цвет */
-  --theme-menu-color: var(--accent-color);
-  --title-color: #DB00FF;       /* Цвет крупных заголовков */
+  --paragraph-color: #f1b2ce; /* Второстепенный текст */
+  --title-color: #db00ff; /* Цвет крупных заголовков */
+  --accent-color: #ff0070; /* Акцентный цвет (базовый) */
+
+  /* ========================
+     ЭЛЕМЕНТЫ ИНТЕРФЕЙСА
+     ======================== */
+  --theme-menu-color: var(--accent-color); /* Цвет текста в меню тем */
   --section-title-color: var(--accent-color); /* Цвет заголовков секций */
-  --decor-bg: var(--accent-color); /* Цвет плашки с текстом */
-  --decor-text: #000028;
 
-  --decor-zone-color: var(--accent-color);  /* Цвет плашки с текстом */
-  
-  --rec-display: flex;
+  --decor-bg: var(--accent-color); /* Цвет фона плашек */
+  --decor-text: #000028; /* Цвет текста на плашках */
+  --decor-zone-color: var(--accent-color); /* Цвет декоративных уголков */
 
+  --rec-display: flex; /* Управление видимостью значка REC */
 
+  /* ========================
+     СИСТЕМА ОТСТУПОВ
+     ======================== */
   --space-xs: 10px;
   --space-sm: 15px;
   --space-md: 20px;
@@ -41,5 +47,3 @@
   --space-xxl: 50px;
   --space-xxxl: 80px;
 }
-
-  
