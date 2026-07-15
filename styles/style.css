@@ -346,6 +346,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: var(--space-sm);
+    padding: 0 var(--space-sm);
   }
 
   /* --- Section (Исключение: заголовок над карточками) --- */
@@ -360,7 +361,7 @@
 
   /* --- Gallery (Мозаичная сетка) --- */
   .gallery {
-    padding: 0 var(--space-sm) 60px;
+    padding: 0 var(--space-sm);
   }
 
   .gallery__container {
